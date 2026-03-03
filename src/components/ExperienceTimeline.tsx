@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/Badge";
 
 export function ExperienceTimeline() {
   return (
-    <ol className="relative space-y-8 border-l border-[var(--border)] pl-6">
+    <ol className="relative space-y-8 border-l border-[var(--border)] pl-10">
       {experience.map((role, i) => (
         <li key={i} className="relative">
           {/* Dot */}

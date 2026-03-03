@@ -53,7 +53,7 @@ export default function Home() {
                   href={profile.socials.resumeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full bg-[var(--caramel)] border border-[var(--caramel)] px-4 py-2 text-sm text-white hover:bg-[var(--caramel)]/80 transition-colors"
+                  className="flex items-center gap-2 rounded-full bg-white/[0.06] border border-[var(--border)] px-4 py-2 text-sm text-white/70 hover:text-white hover:border-[var(--sand)]/30 transition-colors"
                 >
                   <FileText size={15} />
                   Resume
@@ -63,12 +63,12 @@ export default function Home() {
           </Container>
         </section>
 
-        {/* ── Stats Strip ── */}
+        {/* ── Stats Strip ──
         <section className="pb-16" aria-label="Quick stats">
           <Container>
             <StatsStrip />
           </Container>
-        </section>
+        </section> */}
 
         {/* ── Project Menu ── */}
         <section className="pb-20" aria-labelledby="projects-heading">

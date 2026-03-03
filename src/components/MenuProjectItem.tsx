@@ -44,18 +44,15 @@ export function MenuProjectItem({ project, index }: MenuProjectItemProps) {
       <div className="flex items-start justify-between gap-4">
         {/* Left */}
         <div className="flex-1 min-w-0">
-          {/* Number + Name */}
-          <div className="flex items-baseline gap-3 mb-1.5">
-            <span className="text-[var(--sand)]/40 text-sm font-medium tabular-nums">
-              {String(index + 1).padStart(2, "0")}
-            </span>
-            <h2 className="text-xl md:text-2xl font-bold text-white leading-tight truncate">
+          {/* Name */}
+          <div className="mb-1.5">
+            <h2 className="text-xl md:text-2xl font-bold text-white leading-tight truncate drop-shadow-[0_1px_6px_rgba(240,218,174,0.15)]">
               {project.name}
             </h2>
           </div>
 
           {/* Tagline */}
-          <p className="text-white/60 text-sm md:text-base leading-snug mb-4 line-clamp-1">
+          <p className="text-white/75 text-sm md:text-base leading-snug mb-4 line-clamp-1">
             {project.tagline}
           </p>
 
